@@ -1,6 +1,6 @@
-echo -e "Initiating adding and commiting files"
+echo Initiating adding and commiting files
 git add -A
 git commit
-echo -e "Pushing Data"
+echo Pushing Data
 git push origin master
-echo -e "Process Complete!"
+echo Process Complete!
