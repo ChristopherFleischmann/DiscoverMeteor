@@ -1,20 +1,18 @@
  <!-- The main html page will be our main app template. -->
+ <!--  Things to remember: not all classes reference the css file-->
 <head>
   <title>Meteor Application</title>
 </head>
 
 <body>
   <div class="container">
-     <header class="navbar navbar-default" role="navigation">
+    <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">Discover Meteor</a>
       </div>
     </header>
-
     <div id="main">
-      <!-- Includes a Template from another place -->
-       {{> postsList}}
+      {{> postsList}}
     </div>
-
   </div>
 </body>

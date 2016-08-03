@@ -1,19 +1,24 @@
-// hard code some basic posts
-var postsData = [
-  {
-    title: 'Introducing Telescope',
-    url: 'http://sachagreif.com/introducing-telescope/'
-  },
-  {
-    title: 'TaRDIS Robotics',
-    url: 'https://www.team5416.com'
-  },
-  {
-    title: 'The Meteor Book',
-    url: 'http://themeteorbook.com'
-  }
-];
-//add helper using the same name as the template name
+//Using a variable to hard code several basic post objects
+//Things to remember: equal signs verses collons
+// var postsData = [
+//   {
+//     title: 'Google',
+//     url: 'https://www.google.com'
+//   },
+//   {
+//     title:'The Meteor Book',
+//     url: 'https://www.discovermeteor.com'
+//   },
+//   {
+//     title: 'TaRDIS Robotics',
+//     url: 'https://www.team5416.com'
+//   }
+// ];
+
+
+//add helper that goes through the posts and returns if it finds one.
 Template.postsList.helpers({
-  posts: postsData
+  posts: function() {
+    return Posts.find();
+  }
 });
